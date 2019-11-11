@@ -1,11 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys  import Keys
 import time
+import getpass
 #User Credential
 print('Welcome to Automated Script for FaceBook Login Script')
 print('-----------------------------------------------------')
 Unme = input('Enter User Name: ')
-Pwd = input('Input Password: ')
+Pwd = getpass.getpass()
 
 brower = webdriver.Chrome() #Connectivity of Driver For Chrome() and For FireFox()
 website_URL ="https://www.google.co.in/"

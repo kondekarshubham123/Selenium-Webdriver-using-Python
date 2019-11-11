@@ -7,7 +7,7 @@ print('-----------------------------------------------------')
 Unme = input('Enter User Name: ')
 Pwd = input('Input Password: ')
 
-brower = webdriver.Firefox()
+brower = webdriver.Chrome() #Connectivity of Driver For Chrome() and For FireFox()
 website_URL ="https://www.google.co.in/"
 brower.get(website_URL)
 search_field = brower.find_element_by_css_selector('input.gLFyf.gsfi')
